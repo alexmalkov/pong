@@ -15,6 +15,7 @@ function Update()
 		mainGameScript.GameOver();
 		//Application.LoadLevel("menu");
 	}
+		DestroyParticleSystem();
 }
 
 function IncreaseBallVelocity()
@@ -26,4 +27,10 @@ function IncreaseBallVelocity()
 function OnCollisionEnter(collision:Collision)
 {
 	Instantiate(particles_splash, transform.position, transform.rotation);
+
+}
+
+function DestroyParticleSystem()
+{
+       Destroy(particles_splash);
 }

@@ -20,3 +20,8 @@ function GameOver()
 	}
 	Application.LoadLevel("menu");
 }
+
+function AddScoreForBonusArea()
+{
+	score += 100;
+}
